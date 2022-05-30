@@ -1,0 +1,31 @@
+{
+	"start": "intro",
+	"intro": {
+		"text": "You find yourself trapped in a dungeon inside a castle which seems to be owned by YOUR MOM. How do you escape?",
+		"opts": {
+			"open door": "door_locked",
+			"search cabinet": "intro_key",
+			"commit die": ""
+		}
+	},
+	"door_locked": {
+		"text": "the door was locked you stoopid",
+		"opts": {
+			"go back": "intro",
+			"commit die": ""
+		}
+	},
+	"intro_key": {
+		"text": "Somehow you found a key, buried under piles of rags and cloth.",
+		"opts": {
+			"open door": "escaped",
+			"commit die": ""
+		}
+	},
+	"escaped": {
+		"text": "You escaped!",
+		"opts": {
+			"commit die": ""
+		}
+	}
+}
